@@ -1,0 +1,11 @@
+<%- include("templates/header") %> 
+    log in
+    <form action='/loggingin' method='post'>
+    <input name='username' type='text' placeholder='username'><br>
+    <input name='password' type='password' placeholder='password'><br>
+    <% if (failedLogin) { %>
+        <br> Username and password not found. <br><br>
+    <% } %>
+    <button>Submit</button>
+    </form>
+<%- include("templates/footer") %> 

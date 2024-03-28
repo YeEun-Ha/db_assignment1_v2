@@ -1,0 +1,8 @@
+<%- include("templates/header") %> 
+    <h1>Hello, <%= username %> <% if (user_type=='admin') { %><%= " (admin)" %><% } %>!</h1>
+    <div>
+        <img src='/cat<%= randomNum %>.jpg' style='width:250px;'>
+    </div>
+    <button style="margin-left: 10px; margin-bottom: 5px;"><a href="http://localhost:3070/logout" 
+        style="text-decoration: none; display: block; padding: 5px;">Sign out</a></button><br>
+<%- include("templates/footer") %> 
