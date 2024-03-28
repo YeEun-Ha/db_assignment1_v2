@@ -297,7 +297,7 @@ app.use('/members', sessionValidation);
 
 app.get('/members', (req,res) => {
     let randomNum = Math.floor(Math.random() * 3) + 1;
-    res.render("formembers", {username: req.session.username, user_type: req.session.user_type, randomNum: randomNum});
+    res.render("forMembers", {username: req.session.username, user_type: req.session.user_type, randomNum: randomNum});
 });
 
 
